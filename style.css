@@ -28,7 +28,6 @@ header {
   align-items: center;
 }
 header nav ul {
-<<<<<<< Updated upstream
   list-style-type: none;
   font-weight: bold;
   margin-top: 10px;
@@ -48,21 +47,6 @@ header nav li {
 header nav a {
   text-decoration: none;
   color: #0065fc;
-=======
-    list-style-type: none;
-    color:  #0065FC;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 0px;
-}
-header nav li {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    padding-right: 70px;
->>>>>>> Stashed changes
 }
 header nav a:hover {
   transform: scale(1.3);
