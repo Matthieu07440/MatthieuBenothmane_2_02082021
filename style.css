@@ -2,9 +2,18 @@
   font-family: raleway;
   src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
+.conteneur-principal{
+  width: 1440px;
+}
 body {
-  margin: 0;
-  font-family: Raleway, arial, sans-serif;
+  height: auto;
+  font-family: "Raleway", arial, sans-serif;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 40px;
 }
 body h1 {
   font-size: large;
@@ -21,28 +30,19 @@ header img {
   height: auto;
 }
 header {
-  margin: 50px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row ;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul {
-  list-style-type: none;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 0px;
+header nav {
+  width: 40%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: auto;
-  padding-left: 0px;
-}
-header nav li {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-right: 55px;
+  margin-right: 50px;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 header nav a {
   text-decoration: none;
@@ -51,9 +51,6 @@ header nav a {
 header nav a:hover {
   transform: scale(1.3);
   transition: 0.5s;
-}
-#banniere-recherche {
-  margin-left: 50px;
 }
 h2 {
   font-size: small;
@@ -90,28 +87,40 @@ h2 {
   border: none;
   cursor: pointer;
 }
-#filtres {
-  margin-left: 50px;
-  width: 930px;
+#banniere-filtre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#filtres{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#bouton-filtres {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-#filtres ul {
+#bouton-filtres ul {
   list-style-type: none;
-  width: 845px;
   height: 50px;
+  padding-left: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-#filtres li {
+#bouton-filtres li {
   width: auto;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  margin-right: 10px;
+  flex-wrap: nowrap;
+  margin-bottom: 5px;
+  margin-right: 30px;
   padding-right: 10px;
   border: 1px solid #f2f2f2;
   border-radius: 30px;
@@ -119,9 +128,8 @@ h2 {
   font-weight: bold;
   height: 45px;
   cursor: pointer;
-  z-index: 2;
 }
-#filtres li:hover {
+#bouton-filtres li:hover {
   background-color: #deebff;
   border-color: #deebff;
   transition: 0.7s;
@@ -141,10 +149,8 @@ h2 {
   padding: 16px 0px 15px 0px;
   margin-right: 15px;
   border-radius: 50%;
-  z-index: 1;
 }
 #dispo {
-  margin-left: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -159,21 +165,23 @@ h2 {
   border-radius: 50%;
 }
 #banniere-hebergements {
-  width: 1340px;
-  height: 623px;
+  width: 100%;
+  height: auto;
   margin-top: 15px;
   margin-bottom: 30px;
-  margin-left: 50px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
 }
 #hebergements {
-  width: 880px;
-  height: 623px;
+  width: 60%;
+  height: auto;
   background-color: #f2f2f2;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 #hebergements h1 {
   padding-left: 40px;
@@ -182,25 +190,28 @@ h2 {
   font-weight: bold;
 }
 #hebergements ul {
-  width: auto;
+  width: 90%;
   height: auto;
   padding: 0px 35px 0px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 .carte-hebergements {
   list-style-type: none;
   background-color: white;
-  width: 245px;
-  height: 200px;
+  width: 30%;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: space-between;
   cursor: pointer;
 }
 #hebergements li:hover {
@@ -209,7 +220,7 @@ h2 {
   box-shadow: 0px 0px 5px 5px #0065fc;
 }
 #hebergements li img {
-  width: 235px;
+  width: 100%;
   height: 115px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -243,22 +254,22 @@ h2 {
   font-size: x-large;
 }
 aside {
-  width: 420px;
-  height: 623px;
+  width: 35%;
   background-color: #f2f2f2;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 #populaire {
-  width: auto;
+  width:85%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
   font-weight: bold;
   font-size: x-large;
   text-align: justify;
@@ -266,34 +277,30 @@ aside {
 #bloc-populaire ul {
   padding-left: 40px;
   padding-right: 40px;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 0px;
 }
 .carte-populaire{
   list-style-type: none;
   background-color: white;
-  width: 320px;
-  height: 140px;
-  padding-left: 5px;
-  padding-right: 5px;
+  width: 100%;
+  padding: 5px;
   margin-bottom: 34.5px;
   border-radius: 20px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 #bloc-populaire img {
-  width: 100px;
+  width: 40%;
   height: 130px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   object-fit: cover;
-  margin: auto;
   text-align: left;
 }
 .article-populaire {
@@ -321,28 +328,27 @@ aside {
 }
 #banniere-activites {
   margin-top: 50px;
-  margin-left: 50px;
 }
 #activités {
-  width: 1340px;
-  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: stretch;
 }
 #activités h2 {
   margin-left: 15px;
 }
 #vieux-port {
-  width: 300px;
+  width: 22%;
   height: 447px;
   border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
 }
 #vieux-port img {
-  width: 300px;
+  width: 100%;
   height: 394px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -354,12 +360,13 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 .colonne {
+  width: 22%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 #pomegues {
-  width: 300px;
+  width: 100%;
   height: 230px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -367,7 +374,7 @@ aside {
   cursor: pointer;
 }
 #pomegues img {
-  width: 300px;
+  width: 100%;
   height: 180px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -379,7 +386,7 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 #frioul {
-  width: 300px;
+  width: 100%;
   height: 166px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -387,7 +394,7 @@ aside {
   cursor: pointer;
 }
 #frioul img {
-  width: 300px;
+  width: 100%;
   height: 109px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -399,7 +406,7 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 #calanques {
-  width: 300px;
+  width: 22%;
   height: 447px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -407,7 +414,7 @@ aside {
   cursor: pointer;
 }
 #calanques img {
-  width: 300px;
+  width: 100%;
   height: 394px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -419,7 +426,7 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 #la-garde {
-  width: 300px;
+  width: 100%;
   height: 195px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -427,7 +434,7 @@ aside {
   cursor: pointer;
 }
 #la-garde img {
-  width: 300px;
+  width: 100%;
   height: 140px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -439,7 +446,7 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 #longchamp {
-  width: 300px;
+  width: 100%;
   height: 210px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -447,7 +454,7 @@ aside {
   cursor: pointer;
 }
 #longchamp img {
-  width: 300px;
+  width: 100%;
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -461,18 +468,16 @@ aside {
 footer {
   background-color: #f2f2f2;
   width: 100%;
-  background-size: cover;
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
 }
 #banniere-footer {
-  width: 70%;
-  margin-left: 50px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 footer ul {
+  width: 25%;
   list-style-type: none;
   padding-left: 0;
 }
@@ -480,7 +485,61 @@ footer li {
   padding-bottom: 20px;
 }
 .infos-site {
+  width: 30%;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  list-style-type: none;
+}
+@media screen and (max-width:970px) {
+  .conteneur-principal{
+    width: 970px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #banniere-recherche{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #filtres{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #bouton-filtres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #bouton-filtres ul{
+    width: 100%;
+    flex-direction: row;
+  }
+  #bouton-filtres li{
+    width: 25%;
+  }
+  #banniere-hebergements{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  aside {
+    width: 100%;
+  }
+  #hebergements{
+    margin-top: 20px;
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+  .infos-site{
+
+  }
 }
