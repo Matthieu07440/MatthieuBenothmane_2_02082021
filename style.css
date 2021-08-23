@@ -2,18 +2,19 @@
   font-family: raleway;
   src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
-#conteneur-principal{
-  max-width: 1440px;
-  margin: 40px 40px 0px 40px;
-}
 body {
-  width: 100%;
+  max-width: 1440px;
   font-family: "Raleway", arial, sans-serif;
   font-size: 1.1em;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  margin: 0px;
+}
+#conteneur-principal{
+  max-width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 body h1 {
   font-size: large;
@@ -54,6 +55,7 @@ header nav a {
 header nav a:hover {
   transform: scale(1.3);
   transition: 0.5s;
+  border-top: #0065fc;
 }
 h2 {
   font-size: small;
@@ -105,7 +107,7 @@ h2 {
   flex-direction: column;
 }
 #bouton-filtres {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -136,7 +138,7 @@ h2 {
   background-color: #deebff;
   border-color: #deebff;
   transition: 0.7s;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .fa-money-bill-wave,
 .fa-child,
@@ -178,12 +180,13 @@ h2 {
   align-content: stretch;
 }
 #hebergements {
-  width: 60%;
+  width: 63%;
   height: auto;
   background-color: #f2f2f2;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
 }
 #hebergements h1 {
@@ -199,13 +202,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  align-content: center;
 }
 .carte-hebergements {
   list-style-type: none;
   background-color: white;
-  width: 30%;
+  width: 29%;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -220,7 +221,7 @@ h2 {
 #hebergements li:hover {
   transform: scale(1.07);
   transition-duration: 0.8s;
-  box-shadow: 0px 0px 5px 5px #0065fc;
+  box-shadow: 0px 0px 5px 5px #deebff;
 }
 #hebergements li img {
   width: 100%;
@@ -284,10 +285,10 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.carte-populaire{
+  align-items: stretch;
   list-style-type: none;
+}
+.carte-populaire a{
   background-color: white;
   width: 100%;
   padding: 5px;
@@ -307,6 +308,7 @@ aside {
   text-align: left;
 }
 .article-populaire {
+  width: 50%;
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
@@ -322,18 +324,23 @@ aside {
 .article-populaire h3 {
   margin: 0px 0px 8px;
   padding-left: 10px;
+  padding-bottom: 15px;
   font-size: medium;
 }
-#bloc-populaire li:hover {
+.carte-populaire a:hover {
   transform: scale(1.07);
   transition-duration: 0.8s;
-  box-shadow: 0px 0px 5px 5px #0065fc;
+  box-shadow: 0px 0px 5px 5px #deebff;
 }
 #banniere-activites {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 #activités {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -343,10 +350,11 @@ aside {
 }
 #vieux-port {
   width: 23%;
-  height: 100%;
   border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 #vieux-port img {
   width: 100%;
@@ -372,6 +380,8 @@ aside {
   border-bottom-right-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 #pomegues img {
   width: 100%;
@@ -392,6 +402,8 @@ aside {
   border-bottom-right-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 #frioul img {
   width: 100%;
@@ -412,6 +424,8 @@ aside {
   border-bottom-right-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 #calanques img {
   width: 100%;
@@ -432,6 +446,8 @@ aside {
   border-bottom-right-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 #la-garde img {
   width: 100%;
@@ -452,6 +468,8 @@ aside {
   border-bottom-right-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 #longchamp img {
   width: 100%;
@@ -469,6 +487,7 @@ footer {
   background-color: #f2f2f2;
   width: 100%;
   margin-top: 50px;
+  margin-right: 0px;
 }
 #banniere-footer {
   display: flex;
@@ -481,6 +500,12 @@ footer ul {
 }
 footer li {
   padding-bottom: 20px;
+}
+footer a{
+  cursor: pointer;
+}
+footer a:hover{
+  color: #0065fc;
 }
 .infos-site {
   width: 30%;
@@ -578,6 +603,7 @@ footer li {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   header {
     width: auto;
@@ -647,27 +673,24 @@ footer li {
   }
   .carte-hebergements{
     width: 100%;
-    height: 50%;
   }
-
   #activités {
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
   }  
   #vieux-port {
-    height: 23%;
+    height: 24%;
     width: 100%;
     margin-bottom: 20px;
   }
   #pomegues {
-    height: 23%;
+    height: 50%;
     width: 100%;
     margin-bottom: 20px;
   }
   #frioul {
-    height: 23%;
+    height: 50%;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -682,9 +705,11 @@ footer li {
     margin-bottom: 20px;
   }
   .colonne {
-    height: auto;
+    height: 46%;
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
   }
   #banniere-footer{
   width: 100%;
