@@ -14,7 +14,6 @@ body {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0px;
 }
 body h1 {
   font-size: large;
@@ -31,7 +30,7 @@ header img {
   height: auto;
 }
 header {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row ;
   justify-content: space-between;
@@ -40,8 +39,12 @@ header {
 header nav {
   width: 40%;
   display: flex;
-  justify-content: flex-end;
   flex-direction: row-reverse;
+  justify-content: space-around;
+}
+#menu {
+  width: 70%;
+  display: flex;
   justify-content: space-around;
 }
 header nav a {
@@ -54,6 +57,9 @@ header nav a:hover {
 }
 h2 {
   font-size: small;
+}
+#banniere-recherche{
+  width: 100%;
 }
 #bouton-recherche {
   background-color: transparent;
@@ -105,8 +111,8 @@ h2 {
   align-items: center;
 }
 #bouton-filtres ul {
+  width: 80%;
   list-style-type: none;
-  height: 50px;
   padding-left: 20px;
   display: flex;
   flex-direction: row;
@@ -118,15 +124,12 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  flex-wrap: nowrap;
   margin-bottom: 5px;
-  margin-right: 30px;
-  padding-right: 10px;
+  padding-right: 15px;
   border: 1px solid #f2f2f2;
   border-radius: 30px;
   border-left-color: #deebff;
   font-weight: bold;
-  height: 45px;
   cursor: pointer;
 }
 #bouton-filtres li:hover {
@@ -190,13 +193,12 @@ h2 {
   font-weight: bold;
 }
 #hebergements ul {
-  width: 90%;
+  width: 100%;
   height: auto;
-  padding: 0px 35px 0px;
-  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
@@ -208,6 +210,7 @@ h2 {
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 5px;
+  box-shadow: 0px 10px 16px 0px #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -268,7 +271,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 10px;
   font-weight: bold;
   font-size: x-large;
@@ -333,16 +336,14 @@ aside {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
 }
 #activités h2 {
   margin-left: 15px;
 }
 #vieux-port {
-  width: 22%;
-  height: 447px;
+  width: 23%;
+  height: 100%;
   border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
@@ -360,14 +361,13 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 .colonne {
-  width: 22%;
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 #pomegues {
   width: 100%;
-  height: 230px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
@@ -406,7 +406,7 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 #calanques {
-  width: 22%;
+  width: 23%;
   height: 447px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -469,15 +469,13 @@ footer {
   background-color: #f2f2f2;
   width: 100%;
   margin-top: 50px;
-
 }
 #banniere-footer {
-  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 footer ul {
-  width: 25%;
+  width: auto;
   list-style-type: none;
   padding-left: 0;
 }
@@ -496,9 +494,34 @@ footer li {
     max-width: 970px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+  }
+  header {
+    width: auto;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .menu {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  #conteneur-principal{
+    width: auto;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
   }
   #banniere-recherche{
     width: 100%;
@@ -520,10 +543,10 @@ footer li {
   }
   #bouton-filtres ul{
     width: 100%;
+    padding: 0;
+    display: flex;
     flex-direction: row;
-  }
-  #bouton-filtres li{
-    width: 25%;
+    flex-wrap: wrap;
   }
   #banniere-hebergements{
     width: 100%;
@@ -539,10 +562,135 @@ footer li {
     margin-top: 20px;
     width: 100%;
   }
-  footer{
+  .carte-hebergements{
+    width: 45%;
+
+  }
+  #banniere-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:500px){
+  #conteneur-principal{
+    max-width: 500px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: auto;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #banniere-recherche{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+  }
+  #bouton-recherche{
     width: 100%;
   }
-  .infos-site{
-    
+  #filtres{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #bouton-filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #bouton-filtres ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  #banniere-hebergements{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  aside {
+    width: 100%;
+  }
+  #hebergements{
+    margin-top: 20px;
+    width: 100%;
+    background-color: unset;
+    display: flex;
+    padding: 0px;
+  }
+  .carte-hebergements{
+    width: 100%;
+    height: 50%;
+  }
+
+  #activités {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }  
+  #vieux-port {
+    height: 23%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #pomegues {
+    height: 23%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #frioul {
+    height: 23%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #calanques {
+    height: 23%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #la-garde {
+    height: 23%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .colonne {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #banniere-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
   }
 }
