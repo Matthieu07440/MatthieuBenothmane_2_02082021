@@ -1,4 +1,5 @@
 @font-face {
+<<<<<<< HEAD
   font-family: "raleway-medium";
   src: url(./Raleway/static/Raleway-Medium.ttf);
 }
@@ -8,13 +9,22 @@
 }
 @font-face {
   font-family: "raleway-semibold";
+=======
+  font-family: "raleway";
+  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+  src: url(./Raleway/static/Raleway-Medium.ttf);
+  src: url(./Raleway/static/Raleway-Thin.ttf);
+>>>>>>> main
   src: url(./Raleway/static/Raleway-SemiBold.ttf);
 }
 body {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   margin: 0;
+=======
+>>>>>>> main
 }
 #conteneur-principal{
   max-width: 100%;
@@ -23,6 +33,7 @@ body {
   flex-direction: column;
 }
 body h1 {
+<<<<<<< HEAD
   font-family: "raleway-semibold", arial, sans-serif;
   font-size: x-large;
 }
@@ -32,6 +43,17 @@ body h2 {
 }
 body h3 {
   font-family: "raleway-light", arial, sans-serif;
+=======
+  font-family: "Raleway", arial, sans-serif;
+  font-size: x-large;
+}
+body h2 {
+  font-family: "Raleway-ExtraLight";
+}
+body h3 {
+  font-family: "Raleway-Thin", arial, sans-serif;
+  font-weight: lighter;
+>>>>>>> main
 }
 body a {
   font-family: "raleway-medium", arial, sans-serif;
@@ -57,6 +79,10 @@ header nav {
   justify-content: space-around;
 }
 header nav a {
+<<<<<<< HEAD
+=======
+  font-family: "Raleway";
+>>>>>>> main
   color: #0065fc;
 }
 header nav a:hover {
@@ -354,9 +380,12 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 #banniere-activites h2{
   font-size: x-large;
 }
+=======
+>>>>>>> main
 #activites {
   width: 100%;
   height: auto;
@@ -534,8 +563,11 @@ footer a:hover{
   margin-top: 30px;
   list-style-type: none;
   text-align: left;
+<<<<<<< HEAD
   font-family: "raleway-semibold", arial, sans-serif;
 
+=======
+>>>>>>> main
 }
 @media screen and (max-width:970px) {
   #conteneur-principal{
