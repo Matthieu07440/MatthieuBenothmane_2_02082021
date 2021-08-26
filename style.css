@@ -1,14 +1,20 @@
 @font-face {
-  font-family: "raleway";
-  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+  font-family: "raleway-medium";
   src: url(./Raleway/static/Raleway-Medium.ttf);
-  src: url(./Raleway/static/Raleway-Thin.ttf);
+}
+@font-face {
+  font-family: "raleway-light";
+  src: url(./Raleway/static/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: "raleway-semibold";
   src: url(./Raleway/static/Raleway-SemiBold.ttf);
 }
 body {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 #conteneur-principal{
   max-width: 100%;
@@ -17,17 +23,18 @@ body {
   flex-direction: column;
 }
 body h1 {
-  font-family: "Raleway", arial, sans-serif;
+  font-family: "raleway-semibold", arial, sans-serif;
   font-size: x-large;
 }
 body h2 {
-  font-family: "Raleway-ExtraLight";
+  font-family: "raleway-semibold", arial, sans-serif;
+  font-size: large;
 }
 body h3 {
-  font-family: "Raleway-Thin", arial, sans-serif;
-  font-weight: lighter;
+  font-family: "raleway-light", arial, sans-serif;
 }
 body a {
+  font-family: "raleway-medium", arial, sans-serif;
   text-decoration: none;
   font-size: large;
   color: unset;
@@ -50,7 +57,6 @@ header nav {
   justify-content: space-around;
 }
 header nav a {
-  font-family: "Raleway";
   color: #0065fc;
 }
 header nav a:hover {
@@ -88,6 +94,8 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 0px;
+  font-family: "raleway-semibold", arial, sans-serif;
+
 }
 #bouton-recherche button {
   background-color: #0065fc;
@@ -95,6 +103,8 @@ h2 {
   border-radius: 0px 10px 10px 0px;
   border: none;
   cursor: pointer;
+  font-family: "raleway-semibold", arial, sans-serif;
+
 }
 #banniere-filtre {
   width: 100%;
@@ -111,6 +121,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-family: "raleway-semibold", arial, sans-serif;
 }
 #bouton-filtres ul {
   width: 80%;
@@ -173,7 +184,6 @@ h2 {
   width: 100%;
   height: auto;
   margin-top: 15px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -189,11 +199,9 @@ h2 {
   flex-wrap: wrap;
   align-content: center;
 }
-#hebergements h1 {
-  padding-left: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bold;
+#hebergements h2 {
+  padding-left: 20px;
+  font-size: x-large;
 }
 #hebergements ul {
   width: 100%;
@@ -235,6 +243,7 @@ h2 {
   margin: 0px 10px 8px;
   font-size: medium;
   font-weight: bolder;
+  padding-left: 0;
 }
 #hebergements li h3 {
   margin: 0px 10px 8px;
@@ -254,8 +263,8 @@ h2 {
   color: #f2f2f2;
 }
 #plus {
-  padding-left: 40px;
-  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 #plus a:hover {
@@ -273,20 +282,21 @@ aside {
   align-items: center;
 }
 #populaire {
-  width:85%;
+  width:80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  margin-bottom: 33px;
   font-weight: bold;
   font-size: x-large;
   text-align: justify;
 }
+#populaire h2{
+  font-size: x-large;
+}
 #bloc-populaire ul {
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 80%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -344,6 +354,9 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
 }
+#banniere-activites h2{
+  font-size: x-large;
+}
 #activites {
   width: 100%;
   height: auto;
@@ -353,6 +366,7 @@ aside {
 }
 #activites h2 {
   margin-left: 15px;
+  font-size: medium;
 }
 #vieux-port {
   width: 23%;
@@ -507,6 +521,7 @@ footer li {
   padding-bottom: 20px;
 }
 footer a{
+  font-family: "raleway-light", arial, sans-serif;
   cursor: pointer;
 }
 footer a:hover{
@@ -519,6 +534,8 @@ footer a:hover{
   margin-top: 30px;
   list-style-type: none;
   text-align: left;
+  font-family: "raleway-semibold", arial, sans-serif;
+
 }
 @media screen and (max-width:970px) {
   #conteneur-principal{
