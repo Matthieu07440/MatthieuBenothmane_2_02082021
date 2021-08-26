@@ -93,6 +93,15 @@ header nav li {
     justify-content: space-between;
     width: auto;
     padding-right: 70px;
+}
+h1 {
+    font-size: large;
+    font-weight: bold;
+header nav li {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding-right: 70px;
 >>>>>>> Stashed changes
 }
 header nav a {
