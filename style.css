@@ -72,11 +72,28 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< Updated upstream
 header nav {
   width: 30%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+=======
+header nav ul {
+    list-style-type: none;
+    color:  #0065FC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0px;
+}
+header nav li {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding-right: 70px;
+>>>>>>> Stashed changes
 }
 header nav a {
 <<<<<<< HEAD
