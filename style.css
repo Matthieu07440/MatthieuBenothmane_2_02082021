@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
   font-family: "raleway-medium";
   src: url(./Raleway/static/Raleway-Medium.ttf);
 }
@@ -9,31 +8,21 @@
 }
 @font-face {
   font-family: "raleway-semibold";
-=======
-  font-family: "raleway";
-  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
-  src: url(./Raleway/static/Raleway-Medium.ttf);
-  src: url(./Raleway/static/Raleway-Thin.ttf);
->>>>>>> main
   src: url(./Raleway/static/Raleway-SemiBold.ttf);
 }
 body {
-  max-width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   margin: 0;
-=======
->>>>>>> main
 }
-#conteneur-principal{
-  max-width: 100%;
+#conteneur-principal {
+  max-width: 1440px;
   margin: 20px;
   display: flex;
   flex-direction: column;
 }
 body h1 {
-<<<<<<< HEAD
   font-family: "raleway-semibold", arial, sans-serif;
   font-size: x-large;
 }
@@ -43,23 +32,16 @@ body h2 {
 }
 body h3 {
   font-family: "raleway-light", arial, sans-serif;
-=======
-  font-family: "Raleway", arial, sans-serif;
-  font-size: x-large;
-}
-body h2 {
-  font-family: "Raleway-ExtraLight";
-}
-body h3 {
-  font-family: "Raleway-Thin", arial, sans-serif;
-  font-weight: lighter;
->>>>>>> main
 }
 body a {
   font-family: "raleway-medium", arial, sans-serif;
   text-decoration: none;
   font-size: large;
   color: unset;
+}
+body ul {
+  list-style-type: none;
+  padding: 0;
 }
 header img {
   width: 90px;
@@ -68,47 +50,17 @@ header img {
 header {
   width: auto;
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-<<<<<<< Updated upstream
 header nav {
   width: 30%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-=======
-header nav ul {
-    list-style-type: none;
-    color:  #0065FC;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 0px;
-}
-header nav li {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    padding-right: 70px;
-}
-h1 {
-    font-size: large;
-    font-weight: bold;
-header nav li {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    padding-right: 70px;
->>>>>>> Stashed changes
 }
 header nav a {
-<<<<<<< HEAD
-=======
-  font-family: "Raleway";
->>>>>>> main
   color: #0065fc;
 }
 header nav a:hover {
@@ -119,7 +71,7 @@ header nav a:hover {
 h2 {
   font-size: small;
 }
-#banniere-recherche{
+#banniere-recherche {
   width: 100%;
 }
 #bouton-recherche {
@@ -147,7 +99,6 @@ h2 {
   height: 100%;
   border-radius: 0px;
   font-family: "raleway-semibold", arial, sans-serif;
-
 }
 #bouton-recherche button {
   background-color: #0065fc;
@@ -156,7 +107,6 @@ h2 {
   border: none;
   cursor: pointer;
   font-family: "raleway-semibold", arial, sans-serif;
-
 }
 #banniere-filtre {
   width: 100%;
@@ -164,7 +114,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
 }
-#filtres{
+#filtres {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -239,17 +189,12 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  align-content: stretch;
 }
 #hebergements {
   width: 63%;
   height: auto;
   background-color: #f2f2f2;
   border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
 }
 #hebergements h2 {
   padding-left: 20px;
@@ -302,16 +247,15 @@ h2 {
   font-size: medium;
   font-weight: bolder;
 }
-.notes{
+.notes {
   display: flex;
   margin: 0px 10px 8px;
   font-size: medium;
-
 }
-.notes-bleu{
+.notes-bleu {
   color: #0065fc;
 }
-.notes-grise{
+.notes-grise {
   color: #f2f2f2;
 }
 #plus {
@@ -325,41 +269,39 @@ h2 {
   font-size: x-large;
 }
 aside {
-  width: 35%;
   background-color: #f2f2f2;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 #populaire {
-  width:80%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 33px;
+  margin-bottom: 19px;
   font-weight: bold;
   font-size: x-large;
   text-align: justify;
 }
-#populaire h2{
+#populaire h2 {
   font-size: x-large;
 }
-#bloc-populaire ul {
+#bloc-populaire{
   width: 80%;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  list-style-type: none;
 }
-.carte-populaire a{
+.carte-populaire a {
   background-color: white;
-  width: 100%;
-  padding: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
   margin-bottom: 34.5px;
   border-radius: 20px;
   cursor: pointer;
@@ -404,159 +346,112 @@ aside {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
-<<<<<<< HEAD
-#banniere-activites h2{
+#banniere-activites h2 {
   font-size: x-large;
 }
-=======
->>>>>>> main
 #activites {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
 }
 #activites h2 {
   margin-left: 15px;
   font-size: medium;
 }
-#vieux-port {
+.carte-activites {
   width: 23%;
   border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-items: stretch;
 }
-#vieux-port img {
-  width: 100%;
-  height: 394px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
+
+.carte-activites:hover {
+  transform: scale(1.07);
+  transition-duration: 0.8s;
+  box-shadow: 0px 20px 20px 0px #deebff;
 }
-#vieux-port:hover {
+.colonne-activites:hover {
   transform: scale(1.07);
   transition-duration: 0.8s;
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 .colonne {
   width: 23%;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#pomegues {
+.colonne-activites {
   width: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
   display: flex;
   flex-direction: column;
 }
-#pomegues img {
+.vieux-port img {
   width: 100%;
-  height: 180px;
+  height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-#pomegues:hover {
-  transform: scale(1.07);
-  transition-duration: 0.8s;
-  box-shadow: 0px 20px 20px 0px #deebff;
-}
-#frioul {
+.pomegues {
   width: 100%;
-  height: 166px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0px 10px 16px 0px #f2f2f2;
-  cursor: pointer;
+  height: 50%;
   display: flex;
-  flex-direction: column;
 }
-#frioul img {
-  width: 100%;
-  height: 109px;
+.pomegues img {
+  height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-#frioul:hover {
-  transform: scale(1.07);
-  transition-duration: 0.8s;
-  box-shadow: 0px 20px 20px 0px #deebff;
+.frioul {
+  height: 40%;
 }
-#calanques {
-  width: 23%;
-  height: 447px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0px 10px 16px 0px #f2f2f2;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-#calanques img {
+.frioul img {
   width: 100%;
-  height: 394px;
+  height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-#calanques:hover {
-  transform: scale(1.07);
-  transition-duration: 0.8s;
-  box-shadow: 0px 20px 20px 0px #deebff;
-}
-#la-garde {
+.calanques img {
   width: 100%;
-  height: 195px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0px 10px 16px 0px #f2f2f2;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-#la-garde img {
-  width: 100%;
-  height: 140px;
+  height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-#la-garde:hover {
-  transform: scale(1.07);
-  transition-duration: 0.8s;
-  box-shadow: 0px 20px 20px 0px #deebff;
-}
-#longchamp {
+.la-garde {
   width: 100%;
-  height: 210px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0px 10px 16px 0px #f2f2f2;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
+  height: 46%;
 }
-#longchamp img {
+.la-garde img {
   width: 100%;
-  height: 150px;
+  height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-#longchamp:hover {
-  transform: scale(1.07);
-  transition-duration: 0.8s;
-  box-shadow: 0px 20px 20px 0px #deebff;
+.longchamp {
+  width: 100%;
+  height: 46%;
+}
+.longchamp img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
 }
 footer {
   background-color: #f2f2f2;
@@ -575,11 +470,11 @@ footer ul {
 footer li {
   padding-bottom: 20px;
 }
-footer a{
+footer a {
   font-family: "raleway-light", arial, sans-serif;
   cursor: pointer;
 }
-footer a:hover{
+footer a:hover {
   color: #0065fc;
 }
 .infos-site {
@@ -589,14 +484,10 @@ footer a:hover{
   margin-top: 30px;
   list-style-type: none;
   text-align: left;
-<<<<<<< HEAD
   font-family: "raleway-semibold", arial, sans-serif;
-
-=======
->>>>>>> main
 }
-@media screen and (max-width:970px) {
-  #conteneur-principal{
+@media screen and (max-width: 970px) {
+  #conteneur-principal {
     max-width: 970px;
     margin: 10px;
     display: flex;
@@ -606,7 +497,7 @@ footer a:hover{
   header {
     width: auto;
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -622,7 +513,7 @@ footer a:hover{
     display: flex;
     justify-content: space-around;
   }
-  #conteneur-principal{
+  #conteneur-principal {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -630,13 +521,13 @@ footer a:hover{
     justify-content: center;
     margin: 10px 10px 10px 10px;
   }
-  #banniere-recherche{
+  #banniere-recherche {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #filtres{
+  #filtres {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -648,14 +539,14 @@ footer a:hover{
     flex-direction: column;
     align-items: center;
   }
-  #bouton-filtres ul{
+  #bouton-filtres ul {
     width: 100%;
     padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  #banniere-hebergements{
+  #banniere-hebergements {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -665,34 +556,30 @@ footer a:hover{
   aside {
     width: 100%;
   }
-  #hebergements{
+  #hebergements {
     margin-top: 20px;
     width: 100%;
   }
-  .carte-hebergements{
+  .carte-hebergements {
     width: 45%;
-
   }
-  #banniere-footer{
+  #banniere-footer {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 }
-@media screen and (max-width:500px){
-  #conteneur-principal{
+@media screen and (max-width: 500px) {
+  #conteneur-principal {
     max-width: 500px;
-    margin: 0px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
   header {
     width: auto;
     display: flex;
-    flex-direction: row ;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
   header nav {
     width: 100%;
@@ -702,13 +589,12 @@ footer a:hover{
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  .inscription {
+    position: absolute;
+    top: 20px;
+    right: 10px;
   }
-  #banniere-recherche{
+  #banniere-recherche {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -716,10 +602,10 @@ footer a:hover{
     align-content: center;
     align-items: flex-start;
   }
-  #bouton-recherche{
+  #bouton-recherche {
     width: 100%;
   }
-  #filtres{
+  #filtres {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -729,74 +615,59 @@ footer a:hover{
     flex-direction: column;
     align-items: flex-start;
   }
-  #bouton-filtres ul{
+  #bouton-filtres ul {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  #banniere-hebergements{
+  #banniere-hebergements {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  aside {
-    width: 100%;
+  #populaire{
+    width: 90%;
   }
-  #hebergements{
+  #bloc-populaire{
+    width: 90%;
+  }
+  #hebergements {
     margin-top: 20px;
     width: 100%;
     background-color: unset;
     display: flex;
-    padding: 0px;
+    flex-direction: column;
   }
-  .carte-hebergements{
+  .carte-hebergements {
     width: 100%;
   }
-  #activités {
+  #banniere-activites {
+    margin-top: 0px;
+  }
+  #activites {
     width: 100%;
     display: flex;
     flex-direction: column;
-  }  
-  #vieux-port {
-    height: 24%;
-    width: 100%;
-    margin-bottom: 20px;
+    justify-content: space-between;
   }
-  #pomegues {
-    height: 50%;
+  .carte-activites {
     width: 100%;
-    margin-bottom: 20px;
-  }
-  #frioul {
-    height: 50%;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  #calanques {
-    height: 23%;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  #la-garde {
-    height: 23%;
-    width: 100%;
-    margin-bottom: 20px;
   }
   .colonne {
-    height: 46%;
     width: 100%;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
-  #banniere-footer{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  #banniere-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
   }
 }
