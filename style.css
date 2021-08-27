@@ -14,11 +14,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-<<<<<<< refs/remotes/origin/main
-  margin: 0;
-=======
   margin: auto;
->>>>>>> mise a jour class activites
 }
 #conteneur-principal {
   max-width: 1440px;
@@ -351,11 +347,7 @@ aside {
   display: flex;
   flex-direction: column;
 }
-<<<<<<< refs/remotes/origin/main
-#banniere-activites h2 {
-=======
 #banniere-activites h2{
->>>>>>> mise a jour class activites
   font-size: x-large;
 }
 #activites {
@@ -369,11 +361,7 @@ aside {
   margin-left: 15px;
   font-size: medium;
 }
-<<<<<<< refs/remotes/origin/main
-.carte-activites {
-=======
 .carte-activite {
->>>>>>> mise a jour class activites
   width: 23%;
   height: 450px;
   border-radius: 20px;
@@ -381,17 +369,6 @@ aside {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-<<<<<<< refs/remotes/origin/main
-  justify-items: stretch;
-}
-
-.carte-activites:hover {
-  transform: scale(1.07);
-  transition-duration: 0.8s;
-  box-shadow: 0px 20px 20px 0px #deebff;
-}
-.colonne-activites:hover {
-=======
   justify-content: space-between;
 }
 .carte-activite img {
@@ -402,27 +379,18 @@ aside {
   object-fit: cover;
 }
 .carte-activite:hover {
->>>>>>> mise a jour class activites
   transform: scale(1.07);
   transition-duration: 0.8s;
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 .colonne {
   width: 23%;
-<<<<<<< refs/remotes/origin/main
-  border-radius: 20px;
-=======
   height: 450px;
->>>>>>> mise a jour class activites
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-<<<<<<< refs/remotes/origin/main
-.colonne-activites {
-=======
 .colonne-activite {
->>>>>>> mise a jour class activites
   width: 100%;
   border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
@@ -431,22 +399,6 @@ aside {
   flex-direction: column;
   justify-content: center;
 }
-<<<<<<< refs/remotes/origin/main
-.vieux-port img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-}
-.pomegues {
-  width: 100%;
-  height: 50%;
-  display: flex;
-}
-.pomegues img {
-  height: 100%;
-=======
 .colonne-activite:hover {
   transform: scale(1.07);
   transition-duration: 0.8s;
@@ -454,80 +406,40 @@ aside {
 }
 .pomegues img {
   height: 81%;
->>>>>>> mise a jour class activites
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-<<<<<<< refs/remotes/origin/main
-.frioul {
-  height: 40%;
-}
-.frioul img {
-  width: 100%;
-  height: 100%;
-=======
 .pomegues{
   height: 50%;
 }
 .frioul img {
   height: 70%;
->>>>>>> mise a jour class activites
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-<<<<<<< refs/remotes/origin/main
-.calanques img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-}
-.la-garde {
-  width: 100%;
-  height: 46%;
-}
-.la-garde img {
-  width: 100%;
-  height: 100%;
-=======
 .frioul{
   height: 35%;
 }
 .la-garde img {
   height: 72%;
->>>>>>> mise a jour class activites
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-<<<<<<< refs/remotes/origin/main
-.longchamp {
-  width: 100%;
-  height: 46%;
-}
-.longchamp img {
-  width: 100%;
-  height: 100%;
-=======
 .la-garde{
   height: 42%;
 }
 .longchamp img {
   height: 79%;
->>>>>>> mise a jour class activites
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-<<<<<<< refs/remotes/origin/main
-=======
 .longchamp{
   height: 50%;
 }
->>>>>>> mise a jour class activites
 footer {
   background-color: #f2f2f2;
   width: 100%;
@@ -560,10 +472,6 @@ footer a:hover {
   list-style-type: none;
   text-align: left;
   font-family: "raleway-semibold", arial, sans-serif;
-<<<<<<< refs/remotes/origin/main
-=======
-
->>>>>>> mise a jour class activites
 }
 @media screen and (max-width: 970px) {
   #conteneur-principal {
