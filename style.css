@@ -11,17 +11,15 @@
   src: url(./Raleway/static/Raleway-SemiBold.ttf);
 }
 body {
-  width: 100%;
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 #conteneur-principal {
-  max-width: 1440px;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex;
-  flex-direction: column;
 }
 body h1 {
   font-family: "raleway-semibold", arial, sans-serif;
@@ -101,7 +99,7 @@ h2 {
   width: 330px;
   display: flex;
   flex-direction: row;
-  padding: 10px 3px;
+  padding: 10px 0px;
 }
 ::placeholder{
   color: black;
@@ -371,6 +369,7 @@ aside {
   box-shadow: 0px 0px 5px 5px #deebff;
 }
 #banniere-activites {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -399,7 +398,7 @@ aside {
   flex-direction: column;
   justify-content: space-between;
 }
-.carte-activite img {
+.mobile-img{
   width: 100%;
   height: 100%;
   border-top-left-radius: 20px;
@@ -470,7 +469,7 @@ aside {
 }
 footer {
   background-color: #f2f2f2;
-  width: 100%;
+  width: 102%;
   margin-top: 50px;
 }
 #banniere-footer {
@@ -504,14 +503,14 @@ footer a:hover {
 }
 @media screen and (max-width: 970px) {
   body{
-    margin: 0;
+    max-width: 970px;
+    display: flex;
+    align-items: stretch;
   }
   #conteneur-principal {
-    max-width: 970px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   header {
     width: auto;
@@ -531,14 +530,6 @@ footer a:hover {
     width: auto;
     display: flex;
     justify-content: space-around;
-  }
-  #conteneur-principal {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 10px 10px 10px 10px;
   }
   #banniere-recherche {
     width: 100%;
@@ -606,22 +597,29 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 500px) {
-  #conteneur-principal {
+  body{
+    max-width: 380px;
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    align-items: stretch;
+  }
+  #conteneur-principal {
+    width: 100%;
+    padding: 0px;
   }
   #conteneur-principal h1 {
     font-family: "raleway-semibold", arial, sans-serif;
-    font-size: large;
+    font-size: x-large;
   }
   #conteneur-principal h2 {
     font-family: "raleway-semibold", arial, sans-serif;
+    font-size: large;
+  }
+  body h3 {
+    font-family: "raleway-light", arial, sans-serif;
     font-size: medium;
   }
   header {
-    padding: 10px;
+    padding: 10px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -631,13 +629,16 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
   }
+  header nav a:hover {
+    transform: none;
+  }
   header img {
     position: absolute;
     left: 10px;
     top: 20px;
   }
   .nav-hebergements{
-    width: 55%;
+    width: 50%;
     height: 40px;
     border-bottom: 1px #0065fc solid;
     border-top: hidden;
@@ -646,7 +647,7 @@ footer a:hover {
     top: 80px;
   }
   .nav-activitees{
-    width: 55%;
+    width: 50%;
     height: 40px;
     border-bottom: 1px #f2f2f2 solid;
     font-family: "raleway-light", arial, sans-serif;
@@ -660,21 +661,26 @@ footer a:hover {
   .inscription {
     position: absolute;
     top: 34px;
-    right: 0px;
+    right: 10px;
   }
   #banniere-recherche {
-    padding: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: flex-start;
+  }
+  #banniere-recherche H1,H3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 85%;
+    text-align: justify;
     align-items: flex-start;
   }
   #bouton-recherche {
     width: 100%;
   }
   #filtres {
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -685,37 +691,69 @@ footer a:hover {
     align-items: flex-start;
   }
   #bouton-filtres ul {
-    width: 100%;
+    width: 96%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  #dispo {
     align-items: flex-start;
   }
   #banniere-hebergements {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
+  }
+  aside {
+    width: 100%;
+    border-radius: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-content: stretch;
   }
   #populaire{
-    width: 90%;
+    width: 100%;
   }
   #bloc-populaire{
-    width: 90%;
+    width: 100%;
   }
   #hebergements {
     margin-top: 20px;
     width: 100%;
     background-color: unset;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
+    align-content: stretch;
+  }
+  #hebergements h2 {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  #hebergements ul {
+    width: 100%; 
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .carte-hebergements {
     width: 100%;
   }
+  #plus {
+    padding: 0;
+  }
   #banniere-activites {
     margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #activites {
     width: 100%;
@@ -723,17 +761,21 @@ footer a:hover {
     flex-direction: column;
     justify-content: space-between;
   }
-  .carte-activites {
+  .mobile-activite {
     width: 100%;
+    height: 190px;
+    margin-bottom: 20px;
+  }
+  .mobile-img {
+    width: 100%;
+    height: 80%;
   }
   .colonne {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: auto;
+    margin-top: 20px;
   }
   #banniere-footer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
