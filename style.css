@@ -103,6 +103,7 @@ h2 {
 }
 ::placeholder{
   color: black;
+  opacity: 1;
 }
 .fa-map-marker-alt {
   padding: 10px 15px;
@@ -388,7 +389,7 @@ aside {
   margin-left: 15px;
   font-size: medium;
 }
-.carte-activite {
+.carte-activite  {
   width: 23%;
   height: 450px;
   border-radius: 20px;
@@ -397,6 +398,10 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.carte-activite a {
+  width: 100%;
+  height: 88%;
 }
 .mobile-img{
   width: 100%;
@@ -432,40 +437,58 @@ aside {
   box-shadow: 0px 20px 20px 0px #deebff;
 }
 .pomegues img {
+  width: 100%;
   height: 81%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.pomegues{
+.pomegues {
   height: 50%;
 }
+.pomegues a {
+  width: 100%;
+  height: 95%;
+}
 .frioul img {
+  width: 100%;
   height: 70%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.frioul{
-  height: 35%;
+.frioul {
+  height: 36%;
+}
+.frioul a {
+  width: 100%;
+  height: 95%;
 }
 .la-garde img {
-  height: 72%;
+  width: 100%;
+  height: 77%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.la-garde{
-  height: 42%;
+.la-garde {
+  height: 45%;
+}
+.la-garde a{
+  height: 96%;
 }
 .longchamp img {
+  width: 100%;
   height: 79%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.longchamp{
-  height: 50%;
+.longchamp {
+  height: 45%;
+}
+.longchamp a{
+  height: 92%;
 }
 footer {
   background-color: #f2f2f2;
@@ -578,8 +601,6 @@ footer a:hover {
 @media screen and (max-width: 500px) {
   body{
     max-width: 500px;
-    padding: 0;
-    margin: 0;
   }
   #conteneur-principal {
     padding: 0px;
@@ -597,7 +618,9 @@ footer a:hover {
     font-size: medium;
   }
   header {
-    padding: 10px 0px;
+    width: 90%;
+    padding-bottom: 20px;
+    margin: auto;
     flex-direction: column;
   }
   header nav {
@@ -635,47 +658,48 @@ footer a:hover {
   .inscription {
     position: absolute;
     top: 34px;
-    right: 5px;
+    right: 25px;
   }
   #banniere-recherche {
     margin-top: 20px;
     align-items: flex-start;
   }
   #banniere-recherche H1,H3 {
-    padding-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 10px;
     width: 85%;
-    align-items: flex-start;
+    margin-right: auto;
+    margin-left: 15px;
   }
   #bouton-recherche {
-    width: 100%;
-    padding-left: 10px;
+    width: 95%;
+    margin: auto;
   }
   #filtres {
+    width: 90%;
     align-items: flex-start;
+    margin: auto;
   }
   #bouton-filtres {
-    padding-left: 10px;
     align-items: flex-start;
   }
   #bouton-filtres ul {
-    width: 96%;
+    width: 98%;
     align-items: flex-start;
   }
   #dispo {
     align-items: flex-start;
-    padding-left: 10px;
+  }
+  .fa-info {
+    margin: 0px 0px;
   }
   aside {
     border-radius: 0px;
     padding-top: 20px;
   }
   #populaire{
-    width: 90%;
+    width: 91%;
   }
   #bloc-populaire{
-    width: 95%;
+    width: 91%;
   }
   .carte-populaire a {
     margin-bottom: 10px;
@@ -689,29 +713,33 @@ footer a:hover {
     align-content: stretch;
   }
   #hebergements h2 {
-    margin-bottom: 0;
-    padding-left: 10px;
+    width: 90%;
+    padding: 0;
+    margin-right:auto ;
+    margin-left: auto;
   }
   #hebergements ul {
     margin-top: 0;
     margin-bottom: 0;
   }
   #hebergements li h3 {
-    margin: 0px 0px 8px;
+    margin: 0px 10px 8px;
   }
   .carte-hebergements {
-    width: 93%;
+    width: 89%;
     margin-bottom: 0;
   }
   #plus {
-    padding-left: 10px;
     margin-top: 20px;
   }
   #banniere-activites {
-    margin-top: 0px;
+    width: 100%;
+    margin-top: 0;
   }
   #banniere-activites h2{
-    padding-left: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #activites {
     flex-direction: column;
@@ -722,7 +750,7 @@ footer a:hover {
     padding: 0;
   }
   .mobile-activite {
-    width: 95%;
+    width: 90%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -738,7 +766,7 @@ footer a:hover {
     align-items: center;
   }
   .colonne-activite {
-    width: 95%;
+    width: 90%;
   }
   #banniere-footer {
     width: 100%;
@@ -750,7 +778,7 @@ footer a:hover {
     list-style-type: none;
   }
   .infos-site {
-    width: 100%;
-    padding-left: 10px;
+    width: 90%;
+    margin: auto;
   }
 }
