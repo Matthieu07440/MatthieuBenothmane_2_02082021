@@ -178,7 +178,7 @@ h2 {
   background-color: #deebff;
   border-color: #deebff;
   transition: 0.7s;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .fa-money-bill-wave,
 .fa-child,
@@ -232,7 +232,7 @@ h2 {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .carte-hebergements {
   list-style-type: none;
@@ -303,7 +303,7 @@ aside {
   align-items: center;
 }
 #populaire {
-  width: 80%;
+  width: 92%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -316,7 +316,7 @@ aside {
   font-size: x-large;
 }
 #bloc-populaire{
-  width: 80%;
+  width: 92%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -504,49 +504,25 @@ footer a:hover {
 @media screen and (max-width: 970px) {
   body{
     max-width: 970px;
-    display: flex;
     align-items: stretch;
   }
   #conteneur-principal {
-    max-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
-  header {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
   header nav {
     width: 100%;
-    display: flex;
     justify-content: flex-end;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  .menu {
-    width: auto;
-    display: flex;
     justify-content: space-around;
   }
   #banniere-recherche {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
   #bouton-recherche button {
-    background-color: #0065fc;
     width: 15%;
-    color: ivory;
     border-radius: 15px;
     position: relative;
     right: 15px;
-    border: none;
-    cursor: pointer;
-    font-family: "raleway-semibold", arial, sans-serif;
   }
   .desktop-bouton{
     display: none;
@@ -555,30 +531,19 @@ footer a:hover {
     display: inline;
   }
   #filtres {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
   #bouton-filtres {
     width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
   #bouton-filtres ul {
     width: 100%;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
   #banniere-hebergements {
-    width: 100%;
-    display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   aside {
     width: 100%;
@@ -592,18 +557,31 @@ footer a:hover {
   }
   #banniere-footer {
     width: 100%;
-    display: flex;
     justify-content: center;
+  }
+  #bouton-filtres li:hover {
+    transform: none;
+  }
+  #hebergements li:hover {
+    transform: scale(1.02)
+  }
+  .carte-populaire a:hover {
+    transform: scale(1.02)
+  }
+  .carte-activite:hover {
+    transform: scale(1.02)
+  }
+  .colonne-activite:hover {
+    transform: scale(1.02);
   }
 }
 @media screen and (max-width: 500px) {
   body{
-    max-width: 380px;
-    display: flex;
-    align-items: stretch;
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
   }
   #conteneur-principal {
-    width: 100%;
     padding: 0px;
   }
   #conteneur-principal h1 {
@@ -620,13 +598,9 @@ footer a:hover {
   }
   header {
     padding: 10px 0px;
-    width: 100%;
-    display: flex;
     flex-direction: column;
   }
   header nav {
-    width: 100%;
-    display: flex;
     justify-content: space-between;
   }
   header nav a:hover {
@@ -661,65 +635,47 @@ footer a:hover {
   .inscription {
     position: absolute;
     top: 34px;
-    right: 10px;
+    right: 5px;
   }
   #banniere-recherche {
-    padding-left: 10px;
     margin-top: 20px;
-    width: 100%;
     align-items: flex-start;
   }
   #banniere-recherche H1,H3 {
+    padding-left: 10px;
     margin-top: 0px;
     margin-bottom: 10px;
     width: 85%;
-    text-align: justify;
     align-items: flex-start;
   }
   #bouton-recherche {
     width: 100%;
+    padding-left: 10px;
   }
   #filtres {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
   }
   #bouton-filtres {
-    display: flex;
-    flex-direction: column;
+    padding-left: 10px;
     align-items: flex-start;
   }
   #bouton-filtres ul {
     width: 96%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: flex-start;
   }
   #dispo {
     align-items: flex-start;
-  }
-  #banniere-hebergements {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: stretch;
+    padding-left: 10px;
   }
   aside {
-    width: 100%;
     border-radius: 0px;
     padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-content: stretch;
   }
   #populaire{
-    width: 100%;
+    width: 90%;
   }
   #bloc-populaire{
-    width: 100%;
+    width: 95%;
   }
   .carte-populaire a {
     margin-bottom: 10px;
@@ -728,46 +684,45 @@ footer a:hover {
     margin-top: 20px;
     width: 100%;
     background-color: unset;
-    padding-left: 10px;
-    padding-right: 10px;
     display: flex;
     flex-direction: column;
     align-content: stretch;
   }
   #hebergements h2 {
     margin-bottom: 0;
-    padding: 0;
+    padding-left: 10px;
   }
   #hebergements ul {
-    width: 100%; 
-    height: auto;
     margin-top: 0;
     margin-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  }
+  #hebergements li h3 {
+    margin: 0px 0px 8px;
   }
   .carte-hebergements {
-    width: 100%;
+    width: 93%;
     margin-bottom: 0;
   }
   #plus {
-    padding: 0;
+    padding-left: 10px;
     margin-top: 20px;
   }
   #banniere-activites {
     margin-top: 0px;
+  }
+  #banniere-activites h2{
     padding-left: 10px;
-    padding-right: 10px;
   }
   #activites {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+  }
+  #activites h2{
+    font-size: large;
+    padding: 0;
   }
   .mobile-activite {
-    width: 100%;
+    width: 95%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -780,17 +735,19 @@ footer a:hover {
   .colonne {
     width: 100%;
     height: auto;
+    align-items: center;
+  }
+  .colonne-activite {
+    width: 95%;
   }
   #banniere-footer {
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
   }
   footer ul {
     width: 100%;
     list-style-type: none;
-    padding-left: 0px;
   }
   .infos-site {
     width: 100%;
