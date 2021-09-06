@@ -177,7 +177,6 @@ h2 {
 }
 #bouton-filtres li:hover {
   background-color: #deebff;
-  border-color: #deebff;
   transition: 0.7s;
   transform: scale(1.1);
 }
@@ -384,6 +383,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 #activites h2 {
   margin-left: 15px;
@@ -395,13 +395,12 @@ aside {
   border-radius: 20px;
   box-shadow: 0px 10px 16px 0px #f2f2f2;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .carte-activite a {
   width: 100%;
-  height: 88%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-img{
   width: 100%;
@@ -421,6 +420,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .colonne-activite {
   width: 100%;
@@ -430,6 +430,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .colonne-activite:hover {
   transform: scale(1.07);
@@ -447,8 +448,9 @@ aside {
   height: 50%;
 }
 .pomegues a {
-  width: 100%;
-  height: 95%;
+  height: 97%;
+  display: flex;
+  flex-direction: column;
 }
 .frioul img {
   width: 100%;
@@ -461,8 +463,9 @@ aside {
   height: 36%;
 }
 .frioul a {
-  width: 100%;
   height: 95%;
+  display: flex;
+  flex-direction: column;
 }
 .la-garde img {
   width: 100%;
@@ -475,7 +478,9 @@ aside {
   height: 45%;
 }
 .la-garde a{
-  height: 96%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
 }
 .longchamp img {
   width: 100%;
@@ -488,8 +493,9 @@ aside {
   height: 45%;
 }
 .longchamp a{
-  height: 92%;
-}
+  height: 93%;
+  display: flex;
+  flex-direction: column;}
 footer {
   background-color: #f2f2f2;
   width: 100%;
@@ -524,9 +530,9 @@ footer a:hover {
   text-align: left;
   font-family: "raleway-semibold", arial, sans-serif;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 800px) {
   body{
-    max-width: 970px;
+    max-width: 800px;
     align-items: stretch;
   }
   #conteneur-principal {
