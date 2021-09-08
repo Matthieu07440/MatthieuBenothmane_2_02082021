@@ -495,7 +495,8 @@ aside {
 .longchamp a{
   height: 93%;
   display: flex;
-  flex-direction: column;}
+  flex-direction: column;
+}
 footer {
   background-color: #f2f2f2;
   width: 100%;
@@ -530,9 +531,9 @@ footer a:hover {
   text-align: left;
   font-family: "raleway-semibold", arial, sans-serif;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body{
-    max-width: 800px;
+    max-width: 900px;
     align-items: stretch;
   }
   #conteneur-principal {
@@ -604,9 +605,9 @@ footer a:hover {
     transform: scale(1.02);
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   body{
-    max-width: 500px;
+    max-width: 550px;
   }
   #conteneur-principal {
     padding: 0px;
